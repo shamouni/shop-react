@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular.woff') format('woff'),
+         url('../fonts/Roboto-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Roboto-Medium.woff2') format('woff2'),
+            url('../fonts/Roboto-Medium.woff') format('woff'),
+            url('../fonts/Roboto-Medium.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    @apply font-['Roboto'] bg-[whitesmoke]
+}
+
+.main {
+    @apply min-h-[85vh] py-10;
+}
+
+.main > .container {
+    @apply mx-auto;
+}
+
+.pagination a {
+    @apply flex px-4 py-1.5 mx-1 items-center justify-center 
+    border border-gray-300 bg-white hover:bg-emerald-50;
+}
+.pagination a.active {
+    @apply bg-green-700 text-white;
+}
+
+.banner {
+    @apply h-[420px] hidden md:flex flex-col items-center justify-center text-center 
+    bg-[url('/public/images/banner2.jpg')] bg-no-repeat bg-fixed bg-cover 
+    border-y border-gray-300 text-3xl
+}
+.banner h3, .banner p {
+    @apply max-w-[90%] bg-white bg-opacity-40 py-3 px-5 text-gray-900
+}
+.banner h3 {
+    @apply text-4xl mb-6
+}
+
+.menu-main {
+    height: 45px;
+}
+
+.menu-main ul {
+    @apply border-l border-zinc-200
+}
+.menu-main li a {
+    @apply block text-[0.92rem] px-5 leading-[45px] border-r 
+    border-zinc-200 hover:bg-gray-900 hover:text-white
+}
+.cart {
+    @apply flex h-[44px] leading-[44px] text-center
+}
+.cart input {
+    @apply w-10 appearance-none text-center border-y border-gray-200
+}
+.cart span {
+    @apply w-7 cursor-pointer select-none border border-gray-200
+}
+
+.card a {
+    @apply overflow-hidden
+}
+.card img {
+    transition: transform .4s ease;
+}
+.card > a:hover img {
+    transform: scale(1.25);
+}
+
+.tabs ul.buttons {
+    @apply flex -mx-3
+}
+.tabs ul.buttons li {
+    @apply cursor-pointer mx-3 pt-5 pb-2
+}
+.tabs ul.buttons li.active {
+    @apply border-t-[3px] border-green-700
+}
+.tabs .content {
+    @apply text-sm -mx-5 mt-7;
+}
+.tabs .content > div {
+    @apply flex-1 px-5;
+}
+.tabs .content.shipping > div {
+    @apply basis-auto;
+}
+.tabs .content.shipping > div:first-child {
+    @apply shrink-0;
+}
+.tabs .content h4 {
+    @apply text-lg font-bold mb-3
+}
+.tabs p, .tabs .content ul {
+    @apply list-disc list-inside
+}
+
+.comments {
+    @apply mt-10
+}
+.comments .form h4 {
+    @apply font-bold mt-5
+}
+.comments .vote {
+    @apply text-sm pr-3
+}
+.comments .opinions {
+    @apply mt-7
+}
+.comments .opinions .item {
+    @apply bg-gray-50 p-4
+}
+.comments .item p {
+    @apply text-[0.9rem] ml-4 mt-1 text-slate-600
+}
+.comments .c-info {
+    @apply flex justify-between items-center
+}
+.comments .c-info time {
+    @apply text-xs text-gray-500 ml-4
+}
+.comments .vote span {
+    @apply ml-3 cursor-pointer select-none opacity-80
+}
+.comments .vote span i {
+    @apply text-base mr-3
+}
+.comments .form > * {
+    @apply max-w-[650px] rounded-sm
+}
+.comments input,
+.comments textarea {
+    @apply flex-1 bg-gray-100 border border-gray-200 outline-0 py-2 px-7
+}
+.comments textarea {
+    @apply w-full h-24 py-3 resize-none mt-5 mb-4
+}
+.comments .form button {
+    @apply py-2 px-7 mt-5 text-base bg-green-600 text-white hover:text-white hover:bg-green-700
+}
+
+.page-single .offers.my-10 {
+    @apply my-0 py-5
+}
+
+.cover {
+    @apply hidden
+}
+body.show-cart .sidebar-cart {
+    @apply w-[350px]
+}
+.sidebar-cart .cart {
+    @apply h-[32px] leading-[32px] text-[.8rem]
+}
+.sidebar-cart .cart input {
+    @apply text-[0.7rem] font-bold
+}
+.sidebar-cart h6 {
+    @apply text-[0.9rem] font-bold leading-tight mb-2
+}
+.sidebar-cart li {
+    @apply flex my-5 items-center justify-between
+}
+.sidebar-cart li > div {
+    @apply flex-1 pl-3
+}
+.sidebar-cart p {
+    @apply mt-2 text-xs font-bold text-green-700
+}
+.sidebar-cart p span {
+    @apply text-gray-300
+}
+.sidebar-cart li svg {
+    @apply self-start cursor-pointer h-[0.9rem] w-[0.9rem]
+}
+.sidebar-cart a {
+    @apply block text-sm font-bold text-center py-2 mt-3 border border-gray-200
+}
+.sidebar-cart, #nav-mobile {
+    transition: .5s;
+}
+.cover {
+    transition: background-color .5s;
+}
+
+/* Mobile Menu */
+#nav-mobile {
+    @apply fixed top-0 left-0 w-0 h-full z-[99] bg-white py-6 overflow-x-hidden
+}
+
+#nav-mobile .logo {
+    @apply block mb-6 mx-auto px-6
+}
+
+#nav-mobile ul {
+    @apply border-b border-gray-200
+}
+#nav-mobile li {
+    @apply block
+}
+#nav-mobile ul a {
+    @apply block py-3 px-7 border-t border-gray-200 text-[0.9rem] font-bold
+}
+.cover {
+    @apply fixed left-0 top-0 w-full h-full z-[98] bg-black bg-opacity-70 hidden
+}
+body.show-nav #nav-mobile {
+    @apply w-[280px]
+}
+body.show-nav .cover, body.show-cart .cover {
+    @apply block
+}
+/* Mobile End Menu */
+
+#search {
+    @apply relative
+}
+#search .list {
+    @apply absolute left-[1px] top-[43px] w-full max-h-[147px] overflow-auto z-[2] bg-white
+}
+#search .list > * {
+    @apply block py-[7px] px-[15px] text-[0.9rem] border-t 
+}
+#search .list a {
+    @apply border-gray-200 hover:text-white hover:bg-gray-800
+}
+
+
+@media screen and (max-width: 767.98px) {
+    section.py-10 {
+        @apply py-5
+    }
+    section.my-10 {
+        @apply my-5
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+    body .slick-track {
+        @apply flex
+    }
+    body .slick-slide {
+        @apply max-w-[320px] flex-shrink-0 basis-[320px]
+    }
+}

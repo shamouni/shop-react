@@ -1,0 +1,109 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "price": 50.00,
+            "title": "Inception",
+            "category": "Laptop", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 2,
+            "price": 49.99,
+            "title": "Metal Gear Solid",
+            "category": "Clothes", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 3,
+            "price": 32.00,
+            "title": "Inception",
+            "category": "Phone", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 4,
+            "price": 12.50,
+            "title": "Lost",
+            "category": "Jeans", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 5,
+            "price": 7.00,
+            "title": "The story of a writter",
+            "category": "Clothes", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 6,
+            "price": 212.00,
+            "title": "Hello my friend",
+            "category": "Home", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 7,
+            "price": 70.00,
+            "title": "New Movie",
+            "category": "Jeans", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 8,
+            "price": 34.99,
+            "title": "Hello Today",
+            "category": "Laptop", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 9,
+            "price": 50.00,
+            "title": "Hello a news title",
+            "category": "Phone", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 10,
+            "price": 77.30,
+            "title": "How was that?",
+            "category": "TV", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 11,
+            "price": 99,
+            "title": "New Movie",
+            "category": "Clothes", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 12,
+            "price": 22.50,
+            "title": "Hello Today",
+            "category": "Clothes", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 13,
+            "price": 14,
+            "title": "Hello a news title",
+            "category": "Phone", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 14,
+            "price": 11.32,
+            "title": "How was that?",
+            "category": "Home", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        },
+        {
+            "id": 15,
+            "price": 7.00,
+            "title": "How was that?",
+            "category": "Jeans", 
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident veritatis ab debitis nostrum nam. Veritatis blanditiis sequi quod unde aliquam in quaerat eligendi? Obcaecati quia inventore culpa voluptatem! Delectus?"
+        }
+    ]
+}
