@@ -1,10 +1,12 @@
-import { useContext } from 'react'
-import {Link} from 'react-router-dom'
-import ShopContext from '../../store/context'
+import { useContext } from 'react';
+import {Link} from 'react-router-dom';
+import ShopContext from '../../store/context';
 
-import SidebarCart from "../Cart/SidebarCart"
-import Menu from "./Menu"
-import NavMobile from "./Nav-Mobile"
+import SidebarCart from "../Cart/SidebarCart";
+import Menu from "./Menu";
+import NavMobile from "./Nav-Mobile";
+
+const ROOT = process.env.REACT_APP_ROOT;
 
 
 const Header = () => {
@@ -47,8 +49,8 @@ const Header = () => {
                     </div>
 
                     <div className="flex items-center">
-                        <Link to="/">
-                            <img src="/images/logo.png" alt="logo" width={218} className="w-[180px] sm:w-[218px]" />
+                        <Link to={`${ROOT}`}>
+                            <img src={`${ROOT}/images/logo.png`} alt="logo" width={218} className="w-[180px] sm:w-[218px]" />
                         </Link>
                     </div>
 

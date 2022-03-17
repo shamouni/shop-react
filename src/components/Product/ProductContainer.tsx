@@ -1,12 +1,14 @@
-import { useContext } from "react"
-import {useParams} from 'react-router-dom'
+import { useContext } from "react";
+import {useParams} from 'react-router-dom';
 
-import useAsyncRequest, { TYPES } from "../../hooks/useAsyncRequest"
-import ShopContext from '../../store/context'
+import useAsyncRequest, { TYPES } from "../../hooks/useAsyncRequest";
+import ShopContext from '../../store/context';
 
-import OfferProducts from "../Home/OfferProducts"
-import ProductCart from "./ProductCart"
-import Tabs from "./Tabs"
+import OfferProducts from "../Home/OfferProducts";
+import ProductCart from "./ProductCart";
+import Tabs from "./Tabs";
+
+const ROOT = process.env.REACT_APP_ROOT;
 
 
 const ProductContainer = () => {
@@ -38,7 +40,7 @@ const ProductContainer = () => {
 
                     <div className="basis-2/5 max-w-[500px]">
                         {!loading && (
-                            <img src={`/images/p${id}.jpg`} alt="my product" />
+                            <img src={`${ROOT}/images/p${id}.jpg`} alt="my product" />
                         )}
                     </div>
 

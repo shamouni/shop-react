@@ -5,6 +5,7 @@ import DataMock from '../../hooks/data-mock.json';
 import { TProduct } from '../../interfaces/IProduct';
 
 const body = document.querySelector('body') as HTMLElement;
+const ROOT = process.env.REACT_APP_ROOT;
 
 
 const Search = () => {
@@ -66,7 +67,7 @@ const Search = () => {
             {(flag && text !== "") && (
                 <div className="list">
                     {filteredList.map(i => (
-                        <Link onMouseDown={itemClick} to={'/products/' + i.id} key={i.id} >
+                        <Link onMouseDown={itemClick} to={`${ROOT}/products/${i.id}`} key={i.id} >
                             {i.title}
                         </Link>
                     ))}

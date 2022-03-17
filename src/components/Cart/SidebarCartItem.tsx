@@ -1,6 +1,8 @@
 import { ChangeEvent, FC } from "react";
 import { TCart } from "../../interfaces/IProduct";
 
+const ROOT = process.env.REACT_APP_ROOT;
+
 interface IProps {
     cartItem: TCart,
     updateCart: (id: number, count: number) => void;
@@ -28,7 +30,7 @@ const SidebarCartItem: FC<IProps> = ({ cartItem = {}, updateCart, removeCart }) 
 
     return (
         <li>
-            <img src={`/images/p${id}.jpg`} alt="p" width={65} height={74} />
+            <img src={`${ROOT}/images/p${id}.jpg`} alt="p" width={65} height={74} />
 
             <div>
                 <h6>{title}</h6>

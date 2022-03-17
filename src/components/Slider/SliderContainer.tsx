@@ -11,7 +11,7 @@ const SliderContainer = () => {
 
     useEffect(() => {
         
-        // initialize();
+        initialize();
 
         return () => {
             unbind();

@@ -1,5 +1,7 @@
 import { FC } from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+
+const ROOT = process.env.REACT_APP_ROOT;
 
 interface IProps {
     page: number;
@@ -8,7 +10,7 @@ interface IProps {
 
 const Pagination: FC<IProps> = ({ page, pages }) => {
 
-    const url = '/products?page=';
+    const url = ROOT + '/products?page=';
 
     return (
         <div className="pagination mt-16">

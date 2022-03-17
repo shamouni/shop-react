@@ -1,5 +1,8 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 import { Link } from 'react-router-dom';
+
+const ROOT = process.env.REACT_APP_ROOT || "";
+const pLink = ROOT + '/products';
 
 const Body1 = document.getElementsByTagName('body')[0];
 const BC = Body1.classList;
@@ -49,21 +52,17 @@ const NavMobile = () => {
     return (
         <>
         <div id="nav-mobile" onMouseDown={navClick}>
-            <Link className="logo" to="/">
-                <img src="/images/logo.png" alt="mobile logo" />
+            <Link className="logo" to={ROOT}>
+                <img src={`${ROOT}/images/logo.png`} alt="mobile logo" />
             </Link>
             <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/products">Laptops</Link></li>
-            <li><Link to="/products">Phones</Link></li>
-            <li><Link to="/products">Clothes</Link></li>
-            <li><Link to="/products">Contact Us</Link></li>
+            <li><Link to={ROOT}>Home</Link></li>
+            <li><Link to={pLink}>Laptops</Link></li>
+            <li><Link to={pLink}>Phones</Link></li>
+            <li><Link to={pLink}>Clothes</Link></li>
+            <li><Link to={pLink}>Contact Us</Link></li>
             </ul>
         </div>
-
-        {/* <div className="col col-nav col-auto">
-            <i onClick={toggleShow} className="fa fa-bars" aria-hidden="true"></i>
-        </div> */}
 
         <div onClick={closeMenuAndCart} className="cover"></div>
         </>

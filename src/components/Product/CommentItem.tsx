@@ -1,10 +1,13 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { TComment } from '../../interfaces/IProduct';
+
+const ROOT = process.env.REACT_APP_ROOT;
 
 interface IProps {
     item: TComment, 
     vote: (id: number, action: string) => any
 }
+
 
 const CommentItem: FC<IProps> = ({ item, vote }) => {
 
@@ -20,11 +23,11 @@ const CommentItem: FC<IProps> = ({ item, vote }) => {
                 </span>
                 <div className='vote flex'>
                     <span className="like flex items-center mr-2" onClick={vote(id, 'like')}>
-                        <img src='/images/like.svg' alt='like' className='mr-1' width={16} height={16} />
+                        <img src={`${ROOT}/images/like.svg`} alt='like' className='mr-1' width={16} height={16} />
                         {like || 0}
                     </span>
                     <span className='dislike flex items-center' onClick={vote(id, 'dislike')}>
-                        <img src='/images/dislike.svg' alt='like' className='mr-1' width={16} height={16} />
+                        <img src={`${ROOT}/images/dislike.svg`} alt='like' className='mr-1' width={16} height={16} />
                         {dislike || 0}
                     </span>
                 </div>

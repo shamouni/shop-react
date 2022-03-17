@@ -5,6 +5,7 @@ import Header from '../components/Header/Header';
 import Home from "../components/Home/HomeContainer";
 import Product from '../components/Product/ProductContainer';
 import ProductsList from '../components/Products/ProductsList';
+const ROOT = process.env.REACT_APP_ROOT || "";
 
 
 const ShopRoutes = () => {
@@ -12,9 +13,9 @@ const ShopRoutes = () => {
     <Router>
         <Header />
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<ProductsList />} />
-            <Route path="/products/:id" element={<Product />} />
+            <Route path={ROOT} element={<Home />} />
+            <Route path={ROOT + "/products"} element={<ProductsList />} />
+            <Route path={ROOT + "/products/:id"} element={<Product />} />
         </Routes>
         <Footer />
     </Router>

@@ -1,6 +1,8 @@
 import {Link} from 'react-router-dom';
 import {TProduct} from '../../interfaces/IProduct';
 
+const ROOT = process.env.REACT_APP_ROOT;
+
 interface IProps {
     item: TProduct
 }
@@ -8,14 +10,14 @@ interface IProps {
 const ProductItem = ({ item }: IProps) => {
 
     const {id, title, price, category} = item;
-    const url = '/products/' + id;
+    const url = ROOT + '/products/' + id;
 
     return (
         <div className="card text-center px-5 my-5">
             
             <Link to={url} className="block">
                 <img 
-                    src={`/images/p${id}.jpg`} 
+                    src={`${ROOT}/images/p${id}.jpg`} 
                     alt={title} 
                     width={294} 
                     height={336} 

@@ -1,13 +1,14 @@
+const ROOT = process.env.REACT_APP_ROOT;
 
 const Shipping = () => {
     return (
         <div className="content shipping md:flex">
             <div className="flex flex-1">
                 <div>
-                    <img src="/images/ship1.webp" alt="ship1" className="flex-1 mr-2" />
+                    <img src={`${ROOT}/images/ship1.webp`} alt="ship1" className="flex-1 mr-2" />
                 </div>
                 <div>
-                    <img src="/images/ship2.webp" alt="ship2" className="flex-1 ml-2" />
+                    <img src={`${ROOT}/images/ship2.webp`} alt="ship2" className="flex-1 ml-2" />
                 </div>
             </div>
             <div className="mt-7 md:mt-0 flex-shrink">
