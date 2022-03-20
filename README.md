@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Visit Online - App URL
-https://shamouni.github.io/shop-react/
+https://shamouni.github.io/shop-react
 
 ## Available Scripts
 
