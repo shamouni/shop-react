@@ -11,7 +11,7 @@ interface IProps {
 
 const CommentItem: FC<IProps> = ({ item, vote }) => {
 
-    const {id, user, comment, like, dislike} = item;
+    const {id, user, comment, like, dislike} = item; 
 
     return (
         <div className='item'>
