@@ -3,7 +3,7 @@ const ROOT = process.env.REACT_APP_ROOT;
 const Shipping = () => {
     return (
         <div className="content shipping md:flex">
-            <div className="flex flex-1">
+            <div className="flex flex-1"> 
                 <div>
                     <img src={`${ROOT}/images/ship1.webp`} alt="ship1" className="flex-1 mr-2" />
                 </div>
