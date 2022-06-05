@@ -1,8 +1,8 @@
 import {Link} from 'react-router-dom';
 import ScrollContainer from 'react-indiana-drag-scroll';
 
-const ROOT = process.env.REACT_APP_ROOT;
-const Dir = ROOT + '/images/banners'; 
+const ROOT = process.env.REACT_APP_ROOT; 
+const Dir = ROOT + '/images/banners';
 const PLink = ROOT + '/products'; 
 
 
