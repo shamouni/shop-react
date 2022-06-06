@@ -3,10 +3,10 @@ import ScrollContainer from 'react-indiana-drag-scroll';
 
 const ROOT = process.env.REACT_APP_ROOT; 
 const Dir = ROOT + '/images/banners';
-const PLink = ROOT + '/products'; 
+const PLink = ROOT + '/products';
 
 
-const Slides = () => {
+const Slides = () => { 
 
     return (
         <>
